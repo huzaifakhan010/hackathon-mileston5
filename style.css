@@ -1,0 +1,95 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times;
+    margin: 18px;
+    padding: 0;
+    background-color:#a4ac86;
+}
+
+h2{
+    text-align: center;
+    color: #183446;
+}
+
+form{
+    max-width: 550px;
+    margin: auto;
+    background-color:#c2c5aa;
+    border-radius: 7px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+    padding: 18px;
+}
+.profilepic{
+    display:block;
+    margin: 0 auto;
+    border: 2px solid #4c7a98;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    border-radius: 500%;
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+}
+
+fieldset{
+    border: 2px solid #2a6f97;
+    border-radius: 7px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+legend{
+    font-weight: bold;
+    text-align: left;
+    color: #183446;
+}
+label{
+    display: block;
+    margin-top: 9px;
+    color: #2c3e50;
+
+}
+
+text,textarea{
+    width: calc(100% - 1px);
+    padding: 7px;
+    margin-top: 3px;
+    border: 1px solid #2a6f97;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ebf0f3;
+    
+    }
+
+button{
+    display: block;
+    width: 90px;
+    padding: 10px;
+    background-color: rgb(91, 186, 203);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 9px;
+    font-size: 15px;
+    font-family:'Times New Roman';
+}
+
+button:hover{
+    background-color: #4c7a98;
+}
+
+input{
+    background-color: #eaf1f5;
+}
+
+#resumeOutput {
+    max-width: 550px;
+    margin:auto;
+    padding: 18px;
+    border: 2px solid #4c7a98;
+    border-radius: 7px;
+    background-color: #f0ead2;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.4);
+
+}
+
+#resmeOutput h1{
+  color: #2c3e50;
+}
