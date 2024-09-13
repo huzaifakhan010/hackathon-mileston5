@@ -1,7 +1,7 @@
 document.getElementById('Form')?.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  // Gather form element references once for efficiency
+
   const usernameElement = document.getElementById('username') as HTMLInputElement;
   const profilepicinput = document.getElementById('profilepic') as HTMLInputElement;
   const nameElement = document.getElementById('Name') as HTMLInputElement;
@@ -11,7 +11,7 @@ document.getElementById('Form')?.addEventListener('submit', function (event) {
   const experienceElement = document.getElementById('experience') as HTMLInputElement;
   const skillsElement = document.getElementById('skills') as HTMLInputElement;
 
-  // Validate required fields (consider adding more validations if needed)
+  
   if (!profilepicinput.files?.[0] || !nameElement.value || !emailElement.value || !PhoneElement.value) {
     alert('Please fill in all required fields: Profile Picture, Name, Email, and Phone Number.');
     return;
@@ -24,10 +24,6 @@ document.getElementById('Form')?.addEventListener('submit', function (event) {
   const skills = skillsElement.value;
   const experience = experienceElement.value;
 
-  // **Handle username removal (two options):**
-
-  // Option 1: Remove username from the generated resume content
-  // const uniquePath = `resume/${username.replace(/\s+/g, '_')}_cv.html`; // Not used in this option
   const resumeOutput = `
     <h2>Resume</h2>
     ${profilepicinput.files?.[0] ? `<Image src="${URL.createObjectURL(profilepicinput.files[0])}" alt="Profile Picture" class="profilepic">` : ''}
